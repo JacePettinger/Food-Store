@@ -1,24 +1,5 @@
 # Food Store Assignment
 
-## Setup Instructions
-
-1. Fork this repository.
-1. Windows users, open Git Bash and run these commands to navigate to your XAMPP htdocs folder:
-```
-cd C:
-cd xampp/
-cd htdocs/
-```
-1. Clone your repository by running this command:
-```
-git clone https://github.com/your-username/food-store.git
-```
-1. Open the folder in VS Code:
-```
-cd food-store
-code .
-```
-
 ## Part 1
 
 1. Set this project up using the MVC template files.
