@@ -11,24 +11,30 @@ class Pages extends Controller
 
     public function about()
     {
+        $employees = $this->model("Employee")->getEmployees();
         $data = [
-            "title" => "about"
+            "title" => "About Us",
+            "employees" => $employees
         ];
         $this->view("pages/about", $data);
     }
 
     public function products()
     {
+        $products = $this->model("Product")->getProducts();
         $data = [
-            "title" => "products"
+            "title" => "Products",
+            "products" => $products
         ];
         $this->view("pages/products", $data);
     }
 
-    public function product()
+    public function product($id)
     {
+        $product = $this->model("Product")->getProduct($id);
         $data = [
-            "title" => "product"
+            "title" => "product",
+            "product" => $product
         ];
         $this->view("pages/product", $data);
     }

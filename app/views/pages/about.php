@@ -68,60 +68,35 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="wrap mcb-wrap one-third valign-top clearfix" style="padding:0 1%">
-                            <div class="mcb-wrap-inner">
-                                <div class="column mcb-column one column_image">
-                                    <div class="image_frame image_item no_link scale-with-grid no_border">
-                                        <div class="image_wrapper"><img class="scale-with-grid" src="images/staff-1.jpg" alt="" />
+                        <?php foreach ($data["employees"] as $employee) : ?>
+                            <div class="wrap mcb-wrap one-third valign-top clearfix" style="padding:0 1%">
+                                <div class="mcb-wrap-inner">
+                                    <div class="column mcb-column one column_image">
+                                        <div class="image_frame image_item no_link scale-with-grid no_border">
+                                            <div class="image_wrapper">
+                                                <img class="scale-with-grid" src="<?php echo URLROOT; ?>images/staff-<?php echo $employee->user_id; ?>.jpg" alt="" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="column mcb-column five-sixth column_column">
+                                        <div class="column_attr clearfix">
+                                            <h4 style="margin-bottom:5px;"><?php echo $employee->first_name . " " . $employee->last_name ?></h4>
+                                            <p class="themecolor">
+                                                <?php echo $employee->job_title ?>
+                                            </p>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="column mcb-column five-sixth column_column">
-                                    <div class="column_attr clearfix">
-                                        <h4 style="margin-bottom:5px;">Anne Williams</h4>
-                                        <p class="themecolor">
-                                            CEO, Founder
-                                        </p>
-                                    </div>
-                                </div>
                             </div>
-                        </div>
-                        <div class="wrap mcb-wrap one-third valign-top clearfix" style="padding:0 1%">
-                            <div class="mcb-wrap-inner">
-                                <div class="column mcb-column one column_image">
-                                    <div class="image_frame image_item no_link scale-with-grid no_border">
-                                        <div class="image_wrapper"><img class="scale-with-grid" src="images/staff-2.jpg" alt="" />
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="column mcb-column five-sixth column_column">
-                                    <div class="column_attr clearfix">
-                                        <h4 style="margin-bottom:5px;">Gregory Smith</h4>
-                                        <p class="themecolor">
-                                            Farmer
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="wrap mcb-wrap one-third valign-top clearfix" style="padding:0 1%">
-                            <div class="mcb-wrap-inner">
-                                <div class="column mcb-column one column_image">
-                                    <div class="image_frame image_item no_link scale-with-grid no_border">
-                                        <div class="image_wrapper"><img class="scale-with-grid" src="images/staff-3.jpg" alt="" />
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="column mcb-column five-sixth column_column">
-                                    <div class="column_attr clearfix">
-                                        <h4 style="margin-bottom:5px;">Kate Brown</h4>
-                                        <p class="themecolor">
-                                            Farmer
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        <?php endforeach; ?>
                     </div>
                 </div>
-                <?php require APPROOT . "/views/inc/footer.php"; ?>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<?php require APPROOT . "/views/inc/footer.php"; ?>

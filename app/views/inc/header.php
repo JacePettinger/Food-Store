@@ -35,4 +35,38 @@
 
 </head>
 
-<body class="home page theme-betheme woocommerce-no-js template-slider style-simple button-round layout-full-width if-zoom if-border-hide hide-love no-shadows header-transparent header-fw minimalist-header-no sticky-header sticky-tb-color ab-hide subheader-both-left menu-line-below-80-1 menuo-right menuo-no-borders mobile-tb-center mobile-mini-mr-ll tablet-sticky mobile-header-mini mobile-sticky">
+<?php if ($data["title"] == "home") { ?>
+
+    <body class="home page theme-betheme woocommerce-no-js 
+template-slider style-simple button-round layout-full-width 
+if-zoom if-border-hide hide-love no-shadows header-transparent header-fw 
+minimalist-header-no sticky-header sticky-tb-color ab-hide subheader-both-left 
+menu-line-below-80-1 menuo-right menuo-no-borders mobile-tb-center mobile-mini-mr-ll 
+tablet-sticky mobile-header-mini mobile-sticky">
+
+    <?php } else if ($data["title"] == "About Us") { ?>
+
+        <body class="archive post-type-archive post-type-archive-product theme-betheme 
+ woocommerce woocommerce-page woocommerce-no-js style-simple button-round layout-full-width 
+ if-zoom if-border-hide hide-love no-shadows header-transparent header-fw minimalist-header-no 
+ sticky-header sticky-tb-color ab-hide subheader-both-left menu-line-below-80-1 menuo-right 
+ menuo-no-borders mobile-tb-center mobile-mini-mr-ll tablet-sticky mobile-header-mini mobile-sticky">
+
+        <?php } else if ($data["title"] == "Products") { ?>
+
+            <body class="archive post-type-archive post-type-archive-product theme-betheme woocommerce woocommerce-page 
+woocommerce-no-js style-simple button-round layout-full-width if-zoom if-border-hide hide-love no-shadows 
+header-transparent header-fw minimalist-header-no sticky-header sticky-tb-color ab-hide subheader-both-left 
+menu-line-below-80-1 menuo-right menuo-no-borders mobile-tb-center mobile-mini-mr-ll tablet-sticky 
+mobile-header-mini mobile-sticky">
+            <?php } else { ?>
+
+                <body class="product-template-default single single-product theme-betheme woocommerce woocommerce-page 
+                woocommerce-no-js style-simple button-round layout-full-width if-zoom if-border-hide hide-love no-shadows 
+                header-transparent header-fw minimalist-header-no sticky-header sticky-tb-color ab-hide subheader-both-left 
+                menu-line-below-80-1 menuo-right menuo-no-borders mobile-tb-center mobile-mini-mr-ll tablet-sticky 
+                mobile-header-mini mobile-sticky">
+                <?php } ?>
+                
+                <div id="Wrapper">
+                    <?php require_once("navbar.php"); ?>

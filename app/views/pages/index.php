@@ -209,7 +209,7 @@
                                                         <div class="image_frame scale-with-grid product-loop-thumb" ontouchstart="this.classList.toggle('hover');">
                                                             <div class="image_wrapper">
                                                                 <a href="<?php echo URLROOT; ?>pages/product">
-                                                                    <div class="mask"></div><img src="<?php echo URLROOT; ?>images/products/cage-free-eggs.jpg" class="scale-with-grid wp-post-image" alt="" />
+                                                                    <div class="mask"></div><img src="<?php echo URLROOT; ?>images/products/eggs.jpg" class="scale-with-grid wp-post-image" alt="" />
                                                                 </a>
                                                             </div>
                                                         </div>
@@ -273,7 +273,7 @@
                                                         <div class="image_frame scale-with-grid product-loop-thumb" ontouchstart="this.classList.toggle( 'hover');">
                                                             <div class="image_wrapper">
                                                                 <a href="<?php echo URLROOT; ?>pages/product">
-                                                                    <div class="mask"></div><img src="<?php echo URLROOT; ?>images/products/chili-peppers.jpg" class="scale-with-grid wp-post-image" alt="" />
+                                                                    <div class="mask"></div><img src="<?php echo URLROOT; ?>images/products/chili-pepper.jpg" class="scale-with-grid wp-post-image" alt="" />
                                                                 </a>
                                                             </div>
                                                         </div>
